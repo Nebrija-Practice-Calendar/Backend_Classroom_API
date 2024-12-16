@@ -26,7 +26,8 @@ export type Practices_Timetables={
 export type Courses_and_Groups={
     id:string,
     //id_degree:string,
-    name:string
+    name:string,
+    practice_group:boolean
 }
 export type Period={
     id:string,

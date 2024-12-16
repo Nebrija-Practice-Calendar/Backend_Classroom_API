@@ -7,6 +7,7 @@ const practices_TimetablesSchema = new Schema(
   {
     id_period: { type: String, required: true },
     id_classroom: { type: String, required: true },
+    automatedIA: { type: Boolean, default: false },
     Timetables: { type: mongoose.Schema.Types.Mixed, required: true }
   },
   { timestamps: true }

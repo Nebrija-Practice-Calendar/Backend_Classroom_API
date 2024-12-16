@@ -6,7 +6,7 @@ const Schema = mongoose.Schema;
 const practiceSchema = new Schema(
   {
     name: { type: String, required: true },
-    students: { type: Array, required: true },
+    students: { type: Number, required: true },
     computers: { type: Boolean, required: true },
     observation: { type: String, required: true },
     id_course_and_group: { type: String, required: true },

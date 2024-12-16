@@ -183,7 +183,8 @@ export const getAvailableHours = async (req: Request, res: Response) => {
     //Aquí Implementar la lógica de las excepciones
     const practiceTimetableWithExceptions = await getExceptionsDays(id_period,practiceTimetable,maxDays,maxHours);
     //console.log("Objeto practiceTimetable con excepciones:", practiceTimetableWithExceptions);
-    if(!practiceTimetableWithExceptions){
+    console.log(practiceTimetableWithExceptions)
+    if(!practiceTimetableWithExceptions.Timetables[0].Week_Timetable.length===null){
       return res.status(201).json({ message: "No se encontró la práctica" });
     }
     return res.status(200).json({practiceTimetableWithExceptions})

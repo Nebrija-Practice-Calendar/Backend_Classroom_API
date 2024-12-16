@@ -21,7 +21,7 @@ function generatehours(horaInicial: string, minutosIntervalo: number, cantidadBl
 
   }
     return horas;
-  }
+}
 
 function generateDaysWeek(star_date: string, end_date: string): string[] {
   const diasSemana = ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo"];

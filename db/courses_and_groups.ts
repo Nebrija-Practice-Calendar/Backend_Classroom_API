@@ -5,7 +5,8 @@ const Schema = mongoose.Schema;
 
 const courses_and_GroupsSchema = new Schema(
   {
-    name: { type: String, required: true }
+    name: { type: String, required: true },
+    practice_group: { type: Boolean, default: false }
   },
   { timestamps: true }
 );
